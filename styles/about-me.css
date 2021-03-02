@@ -1,0 +1,114 @@
+/* First text on page */
+h4{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Text padding and placement */
+  .text1{
+    width: auto;
+    height: auto;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 33px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0.5%;
+    background: white;
+    margin: 1em;
+}
+
+/* Placing the photo and text side by side */
+.row {
+  width: 95%;
+  
+}
+
+/* Photo padding and placement */
+#IC1 {
+  width: 45%;
+  display: inline-block;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 1em;
+  background: white;
+  margin-left: 2em;
+  margin-right: 0.7em;
+  margin-bottom: 1em;
+}
+
+/* Text padding and placement */
+#text2 {
+  margin-top: 0.4em;
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  color: black;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  display: inline-block;
+  background: white;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+}
+
+.heading{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-style: italic;
+  color: black;
+  background-color: white;
+  font-size: 25px;
+  border-width: solid 3px;
+  border-radius: 15px;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.4em;
+  padding-right: 1em;
+  margin-right: 44.5em;
+  margin-left: 1.5em;
+}
+
+/* Placing the photo and text side by side */
+.row1 {
+  width: 95%;
+}
+
+/* Photo padding and placement */
+#IC2 {
+  width: 45%;
+  display: inline-block;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  display: inline-block;
+  background: white;
+  padding: 0.1em;
+}
+
+/* Text padding and placement */
+#text3 {
+  margin-top: 0.4em;
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  color: black;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  display: inline-block;
+  background: white;
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 0.7em;
+  padding: 0.7em;
+}

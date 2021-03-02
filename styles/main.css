@@ -1,4 +1,4 @@
-
+/* Coding for nav bar */
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -15,9 +15,12 @@
       padding-bottom: 2em;
   }
 
+/* Body text */
   body{
     background-color: black;
   }
+
+  /*Placement of Top Nav*/
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -27,6 +30,7 @@
     font-size: 17px;
   }
 
+  /* Top Nav when mouse is hovered */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
@@ -40,6 +44,7 @@
     color: black;
   }
 
+  /* Header colour and padding */
   header {
     background-color: #c96567;
     padding: 30px;
@@ -48,6 +53,7 @@
     color: white;
   }
 
+   /* Footer colour and padding */
   footer {
     background-color: #c96567;
     padding: 24px;
@@ -55,16 +61,22 @@
     color: white;
   }
 
+   /* Code for button at the bottom of the page*/
 .topbutton {
     border-radius: 4px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
 }
 
+ /* When mouse is hovered colour change*/
 .topbutton:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: #696969;
 }
 
+ /* Animation code with arrow */
+  /* Inspired by W3 Schools https://www.w3schools.com/css/css3_buttons.asp */
+
+  
 .topbutton span {
     cursor: pointer;
     display: inline-block;
@@ -72,6 +84,7 @@
     transition: 0.5s;
   }
   
+  /* Aperance of arrow */
   .topbutton span:after {
     content: '\00bb';
     position: absolute;
@@ -89,4 +102,5 @@
     opacity: 1;
     right: 0;
   }
+
 
