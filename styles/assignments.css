@@ -46,3 +46,41 @@ body, html {
     margin: auto;
     width: 40%;
   }
+
+   /* Animation code with arrow */
+  /* Inspired by W3 Schools https://www.w3schools.com/css/css3_buttons.asp */
+
+  
+.buttonmain{
+font-size: 16px;
+border-radius: 8px;
+background-color: white;
+padding: 1em;
+}
+
+.buttonmain span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* Aperance of arrow */
+.buttonmain span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+/* When mouse is hovered */
+.buttonmain:hover span {
+  padding-right: 25px;
+}
+
+.buttonmain:hover span:after {
+  opacity: 1;
+  right: 0;
+}
