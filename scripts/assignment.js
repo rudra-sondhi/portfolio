@@ -40,9 +40,8 @@ function threeNumberSort() {
     let num1 = parseInt(prompt("Insert a number"));
     let num2 = parseInt(prompt("Insert another number"));
     let num3 = parseInt(prompt("Insert one last number")); //Imputs from user 
-    var sort = "";
 
-    //Conditional statments 
+    //Conditional statments as per request 
     if (num1 > num2 && num2 > num3) { //Stating what number is larger and which is smaller 
         document.getElementById('button3').innerHTML = num1 + " > " + num2 + " > " + num3; //Output to user 
     }
@@ -115,7 +114,7 @@ function tenFour() {
 function centuryFromYear() {
     let userYear = prompt('Enter a year to find its century'); //User input
     let century = 0;
-    century = Math.floor(userYear / 100 + 1); //Math floor research done from "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"
+    century = Math.floor(userYear / 100 + 1); //Math.floor research done from "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"
     if (toString(century)[-1] == 1) {
         century = toString(century)
     }
