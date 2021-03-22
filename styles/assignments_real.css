@@ -11,7 +11,7 @@
 }
 
 /*button 1*/
-.button1 {
+#button1 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -24,21 +24,21 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-left: 16%;
+  width: 17%;
+  margin-left: 14%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
 }
 /*Makes the button expand*/
-.button1 span {
+#button1 span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
   
-.button1 span:after {
+#button1 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -48,17 +48,17 @@
 }
   
 /*Codes what happens when mouse is hovered*/
-.button1:hover span {
+#button1:hover span {
   padding-right: 25px;
 }
   
-.button1:hover span:after {
+#button1:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 /*button 2*/
-.button2 {
+#button2 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -71,23 +71,23 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-right: 10%;
-  margin-left: 10%;
+  width: 17%;
+  margin-right: 9%;
+  margin-left: 9%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
 }
 
 /*Makes the button expand*/
-.button2 span {
+#button2 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button2 span:after {
+#button2 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -97,17 +97,17 @@
 }
 
 /*Codes what happens when mouse is hovered*/  
-.button2:hover span {
+#button2:hover span {
   padding-right: 25px;
 }
   
-.button2:hover span:after {
+#button2:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 /*Button 3*/
-.button3 {
+#button3 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -120,22 +120,22 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-right: 10%;
+  width: 17%;
+  margin-right: 8%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
 }
 
 /*Makes the button expand*/
-.button3 span {
+#button3 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
   
-.button3 span:after {
+#button3 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -145,11 +145,11 @@
 }
 
 /*Codes what happens when mouse is hovered*/
-.button3:hover span {
+#button3:hover span {
   padding-right: 25px;
 }
 
-.button3:hover span:after {
+#button3:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -161,7 +161,7 @@
 }
 
 /*Button 4*/
-.button4 {
+#button4 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -174,22 +174,22 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-left: 16%;
+  width: 17%;
+  margin-left: 14%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
 }
 
 /*Makes the button expand*/
-.button4 span {
+#button4 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
   
-.button4 span:after {
+#button4 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -199,17 +199,17 @@
 }
 
 /*Codes what happens when mouse is hovered*/
-.button4:hover span {
+#button4:hover span {
   padding-right: 25px;
 }
   
-.button4:hover span:after {
+#button4:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 /*Button 5*/
-.button5 {
+#button5 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -222,23 +222,23 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-right: 10%;
-  margin-left: 10%;
+  width: 17%;
+  margin-right: 9%;
+  margin-left: 9%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
   }
 
 /*Makes the button expand*/
-.button5 span {
+#button5 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button5 span:after {
+#button5 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -247,17 +247,17 @@
   transition: 0.5s;
 }
 /*Codes what happens when mouse is hovered*/
-.button5:hover span {
+#button5:hover span {
   padding-right: 25px;
 }
   
-.button5:hover span:after {
+#button5:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 /*Button 6*/
-.button6 {
+#button6 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -270,21 +270,21 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-right: 10%;
+  width: 17%;
+  margin-right: 8%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
 }
 /*Makes the button expand*/
-.button6 span {
+#button6 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
   
-.button6 span:after {
+#button6 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -292,12 +292,12 @@
   right: -20px;
   transition: 0.5s;
 }
-  /*Codes what happens when mouse is hovered*/
-.button6:hover span {
+/*Codes what happens when mouse is hovered*/
+#button6:hover span {
   padding-right: 25px;
 }
 
-.button6:hover span:after {
+#button6:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -309,7 +309,7 @@
 }
 
 /*Button 7*/
-.button7 {
+#button7 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -322,21 +322,21 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-left: 16%;
+  width: 17%;
+  margin-left: 14%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
 }
 /*Makes the button expand*/
-.button7 span {
+#button7 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button7 span:after {
+#button7 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -345,18 +345,18 @@
   transition: 0.5s;
 }
   
-  /*Codes what happens when mouse is hovered*/
-.button7:hover span {
+/*Codes what happens when mouse is hovered*/
+#button7:hover span {
   padding-right: 25px;
 }
   
-.button7:hover span:after {
+#button7:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 /*Button 8*/
-.button8 {
+#button8 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -369,23 +369,23 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-right: 10%;
-  margin-left: 10%;
+  width: 17%;
+  margin-right: 9%;
+  margin-left: 9%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
 }
 
 /*Makes the button expand*/
-.button8 span {
+#button8 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button8 span:after {
+#button8 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -395,17 +395,17 @@
 }
 
 /*Codes what happens when mouse is hovered*/
-.button8:hover span {
+#button8:hover span {
   padding-right: 25px;
 }
 
-.button8:hover span:after {
+#button8:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 /*Button 9*/
-.button9 {
+#button9 {
   display: inline-block;
   border: 1.5px solid red;
   padding: 4.5px 11px;
@@ -418,22 +418,22 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  width: 15%;
-  margin-right: 10%;
+  width: 17%;
+  margin-right: 8%;
   height: 2.5em;
   border-radius: 8px;
   transition-duration: 0.001s;
 }
 
 /*Makes the button expand*/
-.button9 span {
+#button9 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button9 span:after {
+#button9 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -443,22 +443,22 @@
 }
   
 /*Codes what happens when mouse is hovered*/
-.button9:hover span {
+#button9:hover span {
   padding-right: 25px;
 }
 
-.button9:hover span:after {
+#button9:hover span:after {
   opacity: 1;
   right: 0;
 }
 
 
 /*Colour change when mouse is hovered over buttons*/
-.button1:hover, .button2:hover, .button3:hover,.button4:hover,.button5:hover,.button6:hover,.button7:hover,.button8:hover,.button9:hover {
+#button1:hover, #button2:hover, #button3:hover,#button4:hover,#button5:hover,#button6:hover,#button7:hover,#button8:hover,#button9:hover {
   background-color:#f44336; 
 }
 /*Colour change when button is activated*/
-.button1:active,.button2:active,.button3:active,.button4:active,.button5:active,.button6:active,.button7:active,.button8:active,.button9:active {
+#button1:active,#button2:active,#button3:active,#button4:active,#button5:active,#button6:active,#button7:active,#button8:active,#button9:active {
   background-color: #41c423;
   transform: translateY(4px);
 }
