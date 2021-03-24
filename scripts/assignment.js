@@ -35,30 +35,30 @@ function signOfProduct() {
     }
 }
 
-//function for button 3: Sorting number from largest to smallest
+//function for button 3: Sorting number from smallest to largest
 function threeNumberSort() {
     let num1 = parseInt(prompt("Insert a number"));
     let num2 = parseInt(prompt("Insert another number"));
     let num3 = parseInt(prompt("Insert one last number")); //Imputs from user 
 
     //Conditional statments as per request 
-    if (num1 > num2 && num2 > num3) { //Stating what number is larger and which is smaller 
-        document.getElementById('button3').innerHTML = num1 + " > " + num2 + " > " + num3; //Output to user 
+    if (num1 < num2 && num2 < num3) { //Stating what number is larger and which is smaller 
+        document.getElementById('button3').innerHTML = num1 + " < " + num2 + " < " + num3; //Output to user 
     }
-    else if (num1 > num3 && num3 > num2) {
-        document.getElementById('button3').innerHTML = num1 + " > " + num3 + " > " + num2;
+    else if (num1 < num3 && num3 < num2) {
+        document.getElementById('button3').innerHTML = num1 + " < " + num3 + " < " + num2;
     }
-    else if (num2 > num1 && num1 > num3) {
-        document.getElementById('button3').innerHTML = num2 + " > " + num1 + " > " + num3;
+    else if (num2 < num1 && num1 < num3) {
+        document.getElementById('button3').innerHTML = num2 + " < " + num1 + " < " + num3;
     }
-    else if (num2 > num3 && num3 > num1) {
-        document.getElementById('button3').innerHTML = num2 + " > " + num3 + " > " + num1;
+    else if (num2 < num3 && num3 < num1) {
+        document.getElementById('button3').innerHTML = num2 + " < " + num3 + " < " + num1;
     }
-    else if (num3 > num1 && num1 > num2) {
-        document.getElementById('button3').innerHTML = num3 + " > " + num1 + " > " + num2;
+    else if (num3 < num1 && num1 < num2) {
+        document.getElementById('button3').innerHTML = num3 + " < " + num1 + " < " + num2;
     }
-    else if (num3 > num2 && num2 > num1) {
-        document.getElementById('button3').innerHTML = num3 + " > " + num2 + " > " + num1;
+    else if (num3 < num2 && num2 < num1) {
+        document.getElementById('button3').innerHTML = num3 + " < " + num2 + " < " + num1;
     }
     else {
         document.getElementById('button3').innerHTML = ("Your input is invalid"); ///In case the numbers entered don't fit 
