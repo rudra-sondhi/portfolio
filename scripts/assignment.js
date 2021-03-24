@@ -115,9 +115,9 @@ function centuryFromYear() {
     let userYear = prompt('Enter a year to find its century'); //User input
     let century = 0;
     century = Math.floor(userYear / 100 + 1); //Math.floor research done from "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"
-    if (toString(century)[-1] == 1) {
-        century = toString(century)
-    }
+    // if (toString(century)[-1] == 1) {
+    //     century = toString(century)
+    // }
     document.getElementById('button7').innerHTML = ('The century is ' + century);
 }
 
