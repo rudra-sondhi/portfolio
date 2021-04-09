@@ -166,14 +166,14 @@ function decrypt() {
     let output = '';
 
     ciphertext = ciphertext.split(' ');
-
-    for (let i = 0; i = ciphertext.length; i++) {
-        console.log (ciphertext)
-        ciphertext[i] = ciphertext[i].replace(/CMd2h/g, '');
-        ciphertext[i] = ciphertext[i].replace(/i5sd/g, '');
-        ciphertext[i] = ciphertext[i].replace(/ujhb/g, '');
-        ciphertext[i] = ciphertext[i].replace(/kJ7j/g, '');
-        ciphertext[i] = ciphertext[i].replace(/m11Hn/g, '');
+    console.log (ciphertext[0]);
+    for (let i = 0; i <= ciphertext.length; i++) {
+        console.log (ciphertext[i]);
+        ciphertext[i] = ciphertext[i].replace(/CMd2h/g, '').replace(/m11Hn/g, '').replace(/i5sd/g, '').replace(/ujhb/g, '').replace(/kJ7j/g, '');
+        // ciphertext[i] = ciphertext[i];
+        // ciphertext[i] = ciphertext[i];
+        // ciphertext[i] = ciphertext[i];
+        // ciphertext[i] = ciphertext[i];
 
         if (ciphertext.length > 2) {
             starttext = ciphertext[i].slice(-2);
