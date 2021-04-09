@@ -142,3 +142,54 @@ function thirdAngle() {
 function f9() {
     document.getElementById("button9").innerHTML = "In progress"; //Output to user 
 }
+
+function encrypt() {
+    let rawinput = prompt("Enter your message");
+    let output = "";
+    rawinput = rawinput.split(" "); // First JS string method used. Split the rawinput into an array of substrings (creates words). 
+    for (let i = 0; i < rawinput.length; i++) { //Second JS string method used. Length is used to detemine how many times the loop will run.
+        if (rawinput[i].length >= 2) {
+            output += 'CMd2h' + (rawinput[i]).slice(2) + 'i5sd' + (rawinput[i][0]) + "ujhb" + (rawinput[i][1]) + " "; //Third JS string method used. Slide only o
+        }
+        else {
+            output += 'kJ7j' + (rawinput[i][0]) + 'm11Hn ';
+        }
+    }
+    document.getElementById('output_user').innerHTML = ("Ecrypted Message: " + output);
+}
+
+
+function decrypt() {
+    let ciphertext = prompt('Enter');
+    let starttext = '';
+    let endtext = '';
+    let output = '';
+
+    ciphertext = ciphertext.split(' ');
+
+    for (let i = 0; i = ciphertext.length; i++) {
+        console.log (ciphertext)
+        ciphertext[i] = ciphertext[i].replace(/CMd2h/g, '');
+        ciphertext[i] = ciphertext[i].replace(/i5sd/g, '');
+        ciphertext[i] = ciphertext[i].replace(/ujhb/g, '');
+        ciphertext[i] = ciphertext[i].replace(/kJ7j/g, '');
+        ciphertext[i] = ciphertext[i].replace(/m11Hn/g, '');
+
+        if (ciphertext.length > 2) {
+            starttext = ciphertext[i].slice(-2);
+            endtext = ciphertext[i].slice(0, -3);
+            output = starttext + endtext + ' ';
+        }
+
+        else if (ciphertext.length = 2) {
+            starttext = ciphertext[i].slice(-2);
+            output = starttext + ' ';
+        }
+
+        else {
+            output = ciphertext[i][0] + ' ';
+        }
+
+    }
+    document.getElementById('output_user').innerHTML = ("Decrypted Message: " + output);
+}

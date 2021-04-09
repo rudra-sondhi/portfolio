@@ -453,14 +453,139 @@
 }
 
 
+/*Width and margin for the fourth row of buttons*/
+.row4{
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+/*Button 10*/
+#button10 {
+  display: inline-block;
+  border: 1.5px solid red;
+  padding: 4.5px 11px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-family: 'Fredoka One', cursive;
+  margin: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 17%;
+  margin-left: 14%;
+  height: 2.5em;
+  border-radius: 8px;
+  transition-duration: 0.001s;
+}
+
+/*Makes the button expand*/
+#button10 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#button10 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+  
+/*Codes what happens when mouse is hovered*/
+#button10:hover span {
+  padding-right: 25px;
+}
+
+#button10:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Button 11*/
+#button11 {
+  display: inline-block;
+  border: 1.5px solid red;
+  padding: 4.5px 11px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-family: 'Fredoka One', cursive;
+  margin: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 17%;
+  height: 2.5em;
+  margin-left: 35.5%;
+  border-radius: 8px;
+  transition-duration: 0.001s;
+}
+
+/*Makes the button expand*/
+#button11 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#button11 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+  
+/*Codes what happens when mouse is hovered*/
+#button11:hover span {
+  padding-right: 25px;
+}
+
+#button11:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
 /*Colour change when mouse is hovered over buttons*/
-#button1:hover, #button2:hover, #button3:hover,#button4:hover,#button5:hover,#button6:hover,#button7:hover,#button8:hover,#button9:hover {
+#button1:hover, #button2:hover, #button3:hover,#button4:hover,#button5:hover,#button6:hover,#button7:hover,#button8:hover,#button9:hover, #button10:hover, #button11:hover {
   background-color:#f44336; 
 }
 /*Colour change when button is activated*/
-#button1:active,#button2:active,#button3:active,#button4:active,#button5:active,#button6:active,#button7:active,#button8:active,#button9:active {
+#button1:active,#button2:active,#button3:active,#button4:active,#button5:active,#button6:active,#button7:active,#button8:active,#button9:active, #button10:active, #button11:active {
   background-color: #41c423;
   transform: translateY(4px);
+}
+
+
+#output_user{
+  display: inline-block;
+  border: 1.5px solid red;
+  padding: 4.5px 11px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  font-family: 'Fredoka One', cursive;
+  margin: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 68.5%;
+  height: 2.5em;
+  margin-left: 14%;
+  border-radius: 8px;
+  transition-duration: 0.001s;
 }
 
 /*main code*/
