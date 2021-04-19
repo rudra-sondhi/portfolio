@@ -149,14 +149,14 @@ function encrypt() {
     let output = "";
     rawinput = rawinput.split(" "); // First JS string method used. Split the rawinput into an array of substrings (creates words). 
     for (let i = 0; i < rawinput.length; i++) { //Second JS string method used. Length is used to detemine how many times the loop will run.
-        if (rawinput[i].length >= 2) {
+        if (rawinput[i].length >= 2) { 
             output += 'CMd2h' + (rawinput[i]).slice(1) + 'i5sd' + (rawinput[i][1]) + (rawinput[i][0]) + "ujhb "; //Third JS string method used. Slice only keeps a specific part of the input
         }
         else { 
             output += (rawinput[i][0]) + 'm11Hn ';
         }
     }
-    document.getElementById('output_user').innerHTML = ("Ecrypted Message: " + output);
+    document.getElementById('output_user').innerHTML = ("Ecrypted Message: " + output); //Output to user via HTML
 }
 
 function decrypt() {
