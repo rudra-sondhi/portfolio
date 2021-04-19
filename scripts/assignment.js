@@ -159,8 +159,9 @@ function encrypt() {
     document.getElementById('output_user').innerHTML = ("Ecrypted Message: " + output);
 }
 
-function decrypt(ciphertext) {
+function decrypt() {
     //Function to decrypt a secret message from the user 
+    let ciphertext = prompt("Enter your Cipher Text");
     let output = ''; //Output to be filled later 
 
     ciphertext = ciphertext.split(" "); //Splits words apart 
