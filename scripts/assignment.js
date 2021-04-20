@@ -152,7 +152,7 @@ function encrypt() {
         if (rawinput[i].length >= 2) { 
             output += 'CMd2h' + (rawinput[i]).slice(1) + 'i5sd' + (rawinput[i][1]) + (rawinput[i][0]) + "ujhb "; //Third JS string method used. Slice only keeps a specific part of the input
         }
-        else { 
+        else {  //If length is anything else 
             output += (rawinput[i][0]) + 'm11Hn ';
         }
     }
