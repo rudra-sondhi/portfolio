@@ -145,18 +145,21 @@ function f9() {
 
 function encrypt() {
     //Function to encrypt a secret message from the user 
-    let rawinput = prompt("Enter your message");
+    let rawinput = prompt("Enter your message"); //Input from user 
     let output = "";
-    rawinput = rawinput.split(" "); // First JS string method used. Split the rawinput into an array of substrings (creates words). 
-    for (let i = 0; i < rawinput.length; i++) { //Second JS string method used. Length is used to detemine how many times the loop will run.
-        if (rawinput[i].length >= 2) { 
-            output += 'CMd2h' + (rawinput[i]).slice(1) + 'i5sd' + (rawinput[i][1]) + (rawinput[i][0]) + "ujhb "; //Third JS string method used. Slice only keeps a specific part of the input
+    let reverse = "";
+    rawinput = rawinput.split(" "); //Add spaces 
+    for (let i = 0; i < rawinput.length; i++) { //Start from 0, if i is bigger than length, add 1
+        if (rawinput[i].length >= 2) { //If rawinput bigger than or equal to 2
+            reverse = rawinput[i].split("").reverse().join(""); //Split into letters, reverse and join
+            output += "hs" + reverse + "nbsi "; //Add jargen and add to var input 
         }
-        else {  //If length is anything else 
-            output += (rawinput[i][0]) + 'm11Hn ';
+        else{
+            output += rawinput[i].charCodeAt(0) + " "; //Use unicode to define a single letter 
         }
     }
-    document.getElementById('output_user').innerHTML = ("Ecrypted Message: " + output); //Output to user via HTML
+    output = output.replace(/NaN/g, ''); //Incase of any spaces leading to NaN
+    document.getElementById('output_user').innerHTML = ("Ecrypted Message: " + output); //To user
 }
 
 function decrypt() {
@@ -166,16 +169,18 @@ function decrypt() {
 
     ciphertext = ciphertext.split(" "); //Splits words apart 
 
-    for (let i = 0; i < ciphertext.length; i = i + 1) {
-        ciphertext[i] = ciphertext[i].replace(/CMd2h/g, '').replace(/m11Hn/g, '').replace(/i5sd/g, '').replace(/ujhb/g, ''); //Replaces filler with blank spaces
+    for (let i = 0; i < ciphertext.length; i = i + 1) { //Start from 0, if i is bigger than length, add 1
+        ciphertext[i] = ciphertext[i].replace(/hs/g, '').replace(/nbsi/g, ''); //Replaces filler with blank spaces
 
-        if (ciphertext[i].length >= 2) { //If length is equal to or more than 2 
+        if (isNaN(ciphertext[i])) { //If input is not a number. Research source: https://mkyong.com/javascript/check-if-variable-is-a-number-in-javascript/
 
-            output += [ciphertext[i].slice(-1)] + [(ciphertext[i]).slice(0, -2)] + ' '; //Output = First letter (now in the back) + rest of the text
+            output += ciphertext[i].split("").reverse().join("") + "  "; //Split into letters, reverse and join
         }
-        else { //If legnth is anything else 
-            output += ciphertext[i][0] + " ";
+        else { //If anything else 
+            output += String.fromCharCode(ciphertext[i]) + " "; //Use 'char code' to convert from unicode 
         }
     }
+    output = output.replace(/NaN/g, ''); //Incase of any spaces leading to NaN
     document.getElementById('output_user').innerHTML = ("Decrypted Message: " + output); //Output to user throught given text box
 }
+
