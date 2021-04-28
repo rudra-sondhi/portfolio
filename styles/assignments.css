@@ -83,3 +83,11 @@ hr {
   opacity: 1;
   right: 0;
 }
+
+#timer{
+  padding-bottom: 2em;
+}
+
+#nice{
+  color: black;
+}

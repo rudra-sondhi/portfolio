@@ -1,0 +1,95 @@
+/*Inspired by W3 Schools, https://www.w3schools.com/howto/howto_css_coming_soon.asp*/
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%
+  }
+  
+  .background1 {
+    /* Background image */
+    background-image: url("../images/cake.png");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  
+  /* Position text in the top-left corner */
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    font-size: medium;
+    background-color: black;
+  }
+  
+  /* Position text in the middle */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the <hr> element */
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+  
+  /* Animation code with arrow */
+  /* Inspired by W3 Schools https://www.w3schools.com/css/css3_buttons.asp */
+   
+  #buttonmain{
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1em;
+  }
+  
+  #buttonmain span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  /* Aperance of arrow */
+  #buttonmain span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  /* When mouse is hovered */
+  #buttonmain:hover span {
+    padding-right: 25px;
+  }
+  
+  #buttonmain:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+#box{
+    border-radius: 8px;
+    background-color:black;
+    padding: 1em;
+    border-color: white;
+    border-style: dashed;
+    border-width: thick;
+}
